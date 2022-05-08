@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="false" name="Suite">
+    <listeners>
+        <listener class-name="com.qa.listeners.TestListeners"></listener>
+    </listeners>
+    <test name="Test">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="11"></parameter>
+        <parameter name="deviceName" value="Any device name"></parameter>
+        <classes>
+            <class name="com.qa.tests.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Test1">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="10.1"></parameter>
+        <parameter name="deviceName" value="Any device name"></parameter>
+        <classes>
+            <class name="RoughWork.test3"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
